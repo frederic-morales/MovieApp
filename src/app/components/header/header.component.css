@@ -1,0 +1,13 @@
+:root {
+  --color1: #eae5e2;
+  --color2: #f3f4f7;
+  --color3: #1f1b2e;
+  --color4: black;
+  --color5: #b8bdb3;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: var(--color4, --color2);
+}
