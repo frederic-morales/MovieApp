@@ -1,13 +1,23 @@
-:root {
-  --color1: #eae5e2;
-  --color2: #f3f4f7;
-  --color3: #1f1b2e;
-  --color4: black;
-  --color5: #b8bdb3;
-}
-
 header {
   width: 100%;
-  height: 70px;
-  background-color: var(--color4, --color2);
+  height: 60px;
+  background-color: var(--color3);
+  display: flex;
+  justify-content: center;
+}
+header main {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .title-container p {
+  color: var(--color2);
+  font-size: 30px;
+  font-family: "Rubik Glitch Pop", system-ui;
+}
+main .bar-container i {
+  color: var(--color2);
+  font-size: 30px;
 }
