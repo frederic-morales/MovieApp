@@ -5,11 +5,12 @@
   margin: 0;
 }
 :root {
-  --color1: #eae5e2;
-  --color2: #f3f4f7;
-  --color3: #1f1b2e;
-  --color4: #706b6b;
-  --color5: #b8bdb3;
+  --color0: #20dfff;
+  --color1: #20c4d8;
+  --color2: #145c82;
+  --color3: #120b13;
+  --color4: #122c45;
+  --color5: #1d8cca;
 }
 /* 
 .rubik-glitch-pop-regular {

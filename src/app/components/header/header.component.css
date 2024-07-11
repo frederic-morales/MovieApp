@@ -4,7 +4,7 @@ header {
   background-color: var(--color3);
   display: flex;
   justify-content: center;
-  box-shadow: 0px 0px 50px var(--color3);
+  box-shadow: 0px -7px 40px var(--color1);
 }
 header main {
   width: 90%;
@@ -14,17 +14,16 @@ header main {
   align-items: center;
 }
 main .title-container p {
-  color: var(--color2);
+  color: var(--color0);
   font-size: 30px;
   font-family: "Rubik Glitch Pop", system-ui;
 }
 main .menu-container i {
-  color: var(--color2);
+  color: var(--color0);
   font-size: 30px;
   margin-left: 20px;
 }
 main .content-container {
-  /* visibility: hidden; */
   position: absolute;
   left: 0;
   top: 0;
@@ -34,10 +33,11 @@ main .content-container {
   background-color: var(--color3);
   display: flex;
   justify-content: space-between;
-  padding: 30px 25px;
+  padding: 15px 5%;
 }
 main .content-container .list {
-  margin-top: 8px;
+  margin-top: 45px;
+  margin-left: 10px;
 }
 main .content-container .list li {
   font-family: "Rubik", sans-serif;
@@ -46,19 +46,57 @@ main .content-container .list li {
   margin-bottom: 45px;
 }
 main .content-container .list li a {
-  color: var(--color2);
+  color: var(--color0);
   font-size: 16px;
 }
 main .content-container .close i {
-  color: var(--color1);
+  color: var(--color0);
   font-size: 40px;
 }
 
-main .content-container ul {
+main .content-container li {
   list-style-type: none;
   text-decoration: none;
 }
-main .content-container ul li a {
+main .content-container li a {
   text-decoration: none;
   color: var(--color2);
+}
+
+/*OTRAS*/
+.visibility {
+  visibility: hidden;
+}
+
+@media (min-width: 700px) {
+  header{
+    height: 70px;
+  }
+  header main {
+    width: 95%;
+  }
+  main .menu-container .fa-bars {
+    display: none;
+  }
+  main .content-container {
+    position: static;
+    visibility: visible;
+    height: 100%;
+    padding: 0;
+  }
+  main .content-container .list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    justify-content: end;
+    margin-right: 10px;
+  }
+  main .content-container .list li{
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+  main .content-container .close{
+    display: none;
+  }
 }

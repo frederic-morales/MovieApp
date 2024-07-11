@@ -3,23 +3,21 @@
     <section class="title-container">
       <p>MovieApp</p>
     </section>
-    <section class="content-container">
+    <section class="content-container" [ngClass]="{ 'visibility': content }">
       <div class="list">
-        <ul>
           <li><a href="">Peliculas</a></li>
           <li><a href="">Series</a></li>
           <li><a href="">Mi lista</a></li>
           <li><a href="">Anime</a></li>
           <li><a href="">Recientes</a></li>
-        </ul>
       </div>
       <div class="close">
-        <i class="fa-solid fa-xmark"></i>
+        <i (click)="displayContent()" class="fa-solid fa-xmark"></i>
       </div>
     </section>
     <section class="menu-container">
       <i class="fa-solid fa-circle-user"></i>
-      <i class="fa-solid fa-bars"></i>
+      <i (click)="displayContent()" class="fa-solid fa-bars"></i>
     </section>
   </main>
 </header>
