@@ -69,12 +69,11 @@ main .content-container li a {
 }
 
 @media (min-width: 700px) {
-  header{
-    height: 70px;
-  }
+  
   header main {
     width: 95%;
   }
+
   main .menu-container .fa-bars {
     display: none;
   }
@@ -98,5 +97,20 @@ main .content-container li a {
   }
   main .content-container .close{
     display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    height: 70px;
+  }
+  main .title-container p{
+    font-size: 36px;
+  }
+  main .content-container .list li a{
+    font-size: 18px;
+  }
+  main .menu-container i{
+    font-size: 36px;
   }
 }
