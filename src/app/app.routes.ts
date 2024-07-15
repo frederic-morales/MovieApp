@@ -1,10 +1,17 @@
 import { Routes } from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
+import { LayoutComponent } from './shared/layout/layout.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: HeaderComponent,
+    component: LayoutComponent,
+    children: [
+      {
+        path: '',
+        component: HomePageComponent
+      }
+    ]
   },
 ];
- 
+  
