@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ApiRequestService } from '../../shared/services/api-request.service';
+
 
 @Component({
   selector: 'app-home-page',
@@ -8,5 +10,15 @@ import { Component } from '@angular/core';
   styleUrl: './home-page.component.css'
 })
 export class HomePageComponent {
-  
+   ngOnInit(){
+    this.getAll()
+   }
+
+   private requestService = inject(ApiRequestService)
+
+   private getAll(){
+    this.requestService.getMovies().subscribe((res) => {
+      console.log(res);
+    })
+   }
 }
