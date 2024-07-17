@@ -1,4 +1,31 @@
-p {
-  color: red;
+main{
+  margin-top: 10px;
+  width: 100%;
+  height: 300px;
+  color: var(--color2);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
- 
+main .img-container{
+  width: 100px;
+}
+main .img-container img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+main h1{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 38px;
+}
+main p{
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+  padding: 0 30px;
+}

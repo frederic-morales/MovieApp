@@ -10,15 +10,15 @@ import { ApiRequestService } from '../../shared/services/api-request.service';
   styleUrl: './home-page.component.css'
 })
 export class HomePageComponent {
-   ngOnInit(){
-    this.getAll()
-   }
+  //  ngOnInit(){
+  //   this.getAll()
+  //  }
 
-   private requestService = inject(ApiRequestService)
+  //  private requestService = inject(ApiRequestService)
 
-   private getAll(){
-    this.requestService.getMovies().subscribe((res) => {
-      console.log(res);
-    })
-   }
+  //  private getAll(){
+  //   this.requestService.getMovies().subscribe((res) => {
+  //     console.log(res);
+  //   })
+  //  }
 }
