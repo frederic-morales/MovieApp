@@ -8,6 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './movies-corousel.component.css'
 })
 export class MoviesCorouselComponent {
-
+  
 }
- 

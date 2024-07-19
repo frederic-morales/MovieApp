@@ -1,11 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { ApiRequestService } from '../../shared/services/api-request.service';
+import { MoviesCorouselComponent } from '../corousels/movies-corousel/movies-corousel.component';
+
 
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [],
+  imports: [MoviesCorouselComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })

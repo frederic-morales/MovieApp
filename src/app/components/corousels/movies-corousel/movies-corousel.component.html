@@ -1,1 +1,17 @@
-<p>movies-corousel works!</p>
+<main>
+    <h1>Movies</h1>
+        <section class="carousel">
+        @for(n of [1,2,3,4,5]; track n){
+                <div class="movie">
+                    <p>TitleMovie</p>
+                    <div>
+                        <img src="https://play-lh.googleusercontent.com/lHPn8SQ4nNVAm3Y-MSAsO6QCiNw6gwHsht--yZsmLL7hnYZXJAOJVz_fwwl3_EXPqAvf=w240-h480-rw"
+                            alt="">
+                    </div>
+                    <div class="information">
+                        <p>Descripcion</p>
+                    </div>
+                </div>
+        }
+        </section>
+</main>
